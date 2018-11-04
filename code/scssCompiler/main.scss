@@ -1,0 +1,7 @@
+/*
+* Dies ist das scss-Hauptfile, hier werden alle scss Dateien importiert.
+* Danach wird diese Datei umkompiliert und der Inhalt in style.min.css gespeichert.
+*/
+
+@import '../themesAndCss/themes';
+@import '../homepage/styles/index';

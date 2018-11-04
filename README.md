@@ -10,9 +10,19 @@ geführt.
 
 ## Projektregeln
 
-### Benennung von Css-Files:
-Jedes Css-File wird genauso benannt, wie das .html, .php, .js, etc. -File, zu welchem es gehört.  
-**Beispiel:** index.html … index.css
+### Verwendung von Scss:
+Die Ordnerstruktur ist so aufgebaut, dass jede Subseite ihren eigenen styles-Ordner enthält.  
+In diesem werden die benötigten scss Dateien gespeichert.  
+Neue Scss-Dateien **müssen** unbedingt in scssCompiler/main.scss importiert werden.  
+Dies dient dazu, damit nur ein einziges scss-File kompiliert werden muss.
+
+Um Kompilieren zu können, muss das Programm **Koala** installiert werden.  
+Dort muss nun der Ordner **scssCompiler** ausgewählt werden.  
+Danach muss man das Outputfile **style.min.css** auswählen, welches sich in *themesAndCss* befindet.
+
+### Benennung von Scss-Files:
+Jedes Scss-File wird genauso benannt, wie das .html, .php, .js, etc. -File, zu welchem es gehört.  
+**Beispiel:** index.html … index.scss  
 
 ### Benennung von Css-Klassen:
 Jede Css-Klasse wird nach folgender Struktur benannt:  
@@ -45,6 +55,7 @@ Grape - R: 148 G: 97 B: 142
 ![Farben](readme_images/Farben.png)
 
 ### Ordnerstruktur: 
-**Beispiel:**
-
-![Ordnerstruktur](readme_images/Ordnerstruktur.png)
+Es darf nicht vorkommen, dass Dateinamen mehrmals verwendet werden, wie index.html und index.php.
+Jeder Name darf nur ein Mal vorkommen, unabhängig von der Dateiendung.
+Im Oberverzeichnis **code** sind die 3 Sub-Seiten **homepage**, **webshop** und **admin_interface** enthalten.  
+Jede von diesen beinhaltet mehrere Ordner, in welche dann die jeweiligen Dateien gespeichert werden.
