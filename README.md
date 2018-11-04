@@ -11,7 +11,7 @@ geführt.
 ## Projektregeln
 
 ### Benennung von Css-Files:
-Jedes Css-File wird genauso benannt, wie das .html, .php, .js, etc. -File, zu welchem es gehört.
+Jedes Css-File wird genauso benannt, wie das .html, .php, .js, etc. -File, zu welchem es gehört.  
 **Beispiel:** index.html … index.css
 
 ### Benennung von Css-Klassen:
@@ -42,5 +42,9 @@ Es wird ein eigener Themes-Ordner erstellt; hier setzen wir alle Standard-Sachen
 Grape - #94618E ; Eggplant - #49274A ; Sand - #F4DECB ; Shell - #F8EEE7  
 Grape - R: 148 G: 97 B: 142
 
+![Farben](readme_images/Farben.png)
+
 ### Ordnerstruktur: 
 **Beispiel:**
+
+![Ordnerstruktur](readme_images/Ordnerstruktur.png)
