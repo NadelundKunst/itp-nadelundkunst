@@ -20,6 +20,8 @@ Um Kompilieren zu können, muss das Programm **Koala** installiert werden.
 Dort muss nun der Ordner **scssCompiler** ausgewählt werden.  
 Danach muss man das Outputfile **style.min.css** auswählen, welches sich in *themesAndCss* befindet.
 
+Alle Variablen, die sich in themes.scss befinden, können somit auch in allen anderen, in main.scss importierten Files verwendet werden.
+
 ### Benennung von Scss-Files:
 Jedes Scss-File wird genauso benannt, wie das .html, .php, .js, etc. -File, zu welchem es gehört.  
 **Beispiel:** index.html … index.scss  
@@ -50,7 +52,7 @@ Es wird ein eigener Themes-Ordner erstellt; hier setzen wir alle Standard-Sachen
 
 ### Farben:
 Grape - #94618E ; Eggplant - #49274A ; Sand - #F4DECB ; Shell - #F8EEE7  
-Grape - R: 148 G: 97 B: 142
+Grape - R:148 G:97 B:142
 
 ![Farben](readme_images/Farben.png)
 
