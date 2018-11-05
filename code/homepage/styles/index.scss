@@ -1,17 +1,45 @@
 /*
 * 
 * Autor: Maciej Dzialoszynski
-* Letzte Änderung: 04.11.18
+* Letzte Änderung: 06.11.18
 */
 
 .index__body {
-    background-color: $primary-light-color;
-    align-content: center;
-    justify-content: center;
-    display: flex;
+    background-color: $secondary-light-color;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 140px;
+
+    header {
+        background-color: $secondary-light-color;
+        border-bottom: 1px solid $primary-light-color;
+        width: 100%;
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+    }
+
+    section,
+    header {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        div {
+            position: relative;
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+    }
+
 }
 
 .index__logo {
-    position: relative;
     height: 100px;
+    padding: 10px 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.index__shrink {
+    height: 60px;
 }
