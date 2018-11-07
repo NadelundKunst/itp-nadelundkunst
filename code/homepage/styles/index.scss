@@ -1,37 +1,74 @@
 /*
 * 
 * Autor: Maciej Dzialoszynski
-* Letzte Änderung: 06.11.18
+* Letzte Änderung: 07.11.18
 */
 
 .index__body {
     background-color: $secondary-light-color;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 140px;
+    padding-top: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
 
     header {
-        background-color: $secondary-light-color;
-        border-bottom: 1px solid $primary-light-color;
         width: 100%;
         position: fixed;
         z-index: 9999;
         top: 0;
-    }
 
-    section,
-    header {
         display: flex;
         justify-content: center;
         align-content: center;
-
-        div {
-            position: relative;
-            margin-left: 30%;
-            margin-right: 30%;
-        }
+        flex-direction: column;
     }
+}
 
+@keyframes index__headerUpper {
+    from {}
+
+    to {
+        background-color: $secondary-light-color;
+    }
+}
+
+.index__headerUpper {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black w/opacity/see-through */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    animation-name: index__headerUpper;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes index__links {
+    from {}
+
+    to {
+        background-color: $secondary-light-color;
+    }
+}
+
+.index__links {
+    align-self: center;
+    height: 50px;
+    width: 40%;
+    
+    animation-name: index__links;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 }
 
 .index__logo {
@@ -40,6 +77,50 @@
     transition: all 0.4s ease-in-out;
 }
 
-.index__shrink {
-    height: 60px;
+.index__jumbotronBackground {
+    position: absolute;
+    top: 0px;
+    background-image: url("../homepage/images/jumbotron.jpg");
+    height: 700px;
+    width: 100%;
+    box-shadow: 0 0 10px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.index__jumbotronTextfield {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100px;
+    position: relative;
+    margin-bottom: 80px;
+    margin-top: 10px;
+
+    div {
+        position: relative;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
 }
