@@ -31,8 +31,8 @@
             margin-right: 30%;
         }
     }
-
 }
+
 
 .index__logo {
     height: 100px;
@@ -42,4 +42,22 @@
 
 .index__shrink {
     height: 60px;
+}
+
+footer {
+    background-color: $secondary-light-color;
+    
+    div {
+        margin-left: 10%;
+        margin-right: 10%;
+        
+        a {
+            color: $secondary-dark-color;
+            font-family: sans-serif;
+        }
+        
+        a:hover {
+            color: $primary-dark-color;
+        }
+    }
 }
