@@ -36,6 +36,7 @@
     display: flex;
     justify-content: center;
     align-content: center;
+    box-shadow: 0 0 10px;
 }
 
 $links-border-radius: 15px;
@@ -44,6 +45,7 @@ $links-border-radius: 15px;
     align-self: center;
     background-color: $secondary-light-color;
     color: $primary-dark-color;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.35);
 
     border-radius: 0 0 $links-border-radius $links-border-radius;
 
@@ -109,7 +111,6 @@ $links-border-radius: 15px;
 }
 
 section {
-    display: flex;
     justify-content: center;
     align-content: center;
     height: 100px;
