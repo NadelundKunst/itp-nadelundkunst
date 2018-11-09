@@ -1,5 +1,4 @@
 function rolldown() {
-    console.log(pageYOffset)
     if (pageYOffset > 1) {
         AOS.init({
             easing: 'ease-out-back',
