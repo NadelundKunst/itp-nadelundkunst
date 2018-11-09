@@ -140,6 +140,40 @@ section {
     }
 }
 
+.index__about {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100px;
+    position: relative;
+    margin-bottom: 80px;
+    margin-top: 10px;
+
+    div {
+        position: relative;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .index__aboutTitle {
+        color: $secondary-dark-color;
+        font-size: $primar-title-size;
+    }
+
+    .index__aboutText {
+        background-color: $primary-dark-color;
+        width: auto;
+        height: auto;
+        position: relative;
+    }
+
+    .index__aboutVideo {
+        width: auto;
+        height: auto;
+        position: relative;
+    }
+}
+
 footer {
     background-color: $secondary-light-color;
 
