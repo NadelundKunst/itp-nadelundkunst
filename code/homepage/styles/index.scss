@@ -109,6 +109,21 @@ $links-border-radius: 15px;
 }
 
 section {
+    justify-content: center;
+    align-content: center;
+    height: 100px;
+    position: relative;
+    margin-bottom: 80px;
+    margin-top: 10px;
+
+    div {
+        position: relative;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+.index__about {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -121,6 +136,25 @@ section {
         position: relative;
         margin-left: 20%;
         margin-right: 20%;
+    }
+
+    .index__aboutTitle {
+        color: $secondary-dark-color;
+        font-size: $primar-title-size;
+    }
+
+    .index__aboutText {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        position: relative;
+    }
+
+    .index__aboutVideo {
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        position: relative;
     }
 }
 
