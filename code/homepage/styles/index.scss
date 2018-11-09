@@ -28,13 +28,6 @@
     }
 }
 
-@keyframes index__headerUpper {
-    from {}
-
-    to {
-        background-color: $secondary-light-color;
-    }
-}
 
 .index__headerUpper {
     width: 100%;
@@ -45,32 +38,18 @@
     display: flex;
     justify-content: center;
     align-content: center;
-
-    animation-name: index__headerUpper;
-    animation-duration: 2s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
+    z-index: 4;
+    top: 0;
 }
 
-@keyframes index__links {
-    from {}
-
-    to {
-        background-color: $secondary-light-color;
-    }
-}
 
 .index__links {
     align-self: center;
     height: 50px;
     width: 40%;
-    
-    animation-name: index__links;
-    animation-duration: 2s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
+    z-index: 2;
+    background-color: rgb(255, 0, 0);
 }
-
 
 .index__logo {
     height: 100px;

@@ -9,17 +9,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Nadel und Kunst</title>
-    <link rel="stylesheet" href="themesAndCss/style.min.css">
+    <link rel="stylesheet" href="themesAndCss/style.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 
-<body class="index__body">
+<body class="index__body" onscroll="rolldown()">
     <!-- HEADER -->
     <header>
         <div class="index__headerUpper">
-            <img class="index__logo" alt="Logo" src="homepage/images/logo.png">
+            <img id="upper" class="index__logo" alt="Logo" src="homepage/images/logo.png">
         </div>
-        <div class="index__links">
-            
+        <div data-aos="fade-down" class="index__links">
+
         </div>
     </header>
 
@@ -51,5 +52,21 @@
             <a href="#">Cookie-Richtlinien</a>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        function rolldown () {
+            console.log(pageYOffset)
+            if (pageYOffset > 1) {
+                AOS.init({
+                    easing: 'ease-out-back',
+                    duration: 1500
+                });
+                setTimeout(function() {
+                    document.getElementById("upper").style.height = "50px";
+                }, 1500);  
+            } 
+        }
+    </script>
 </body>
+
 </html>
