@@ -146,16 +146,15 @@ section {
     }
 
     .index__aboutText {
-        background-color: red;
-        width: 100px;
-        height: 100px;
+        background-color: $primary-dark-color;
+        width: auto;
+        height: auto;
         position: relative;
     }
 
     .index__aboutVideo {
-        background-color: blue;
-        width: 100px;
-        height: 100px;
+        width: auto;
+        height: auto;
         position: relative;
     }
 }
