@@ -29,28 +29,13 @@
     }
 }
 
-@keyframes index__headerUpper {
-    from {}
-
-    to {
-        background-color: $secondary-light-color;
-    }
-}
 
 .index__headerUpper {
     width: 100%;
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Black w/opacity/see-through */
+    background-color: $secondary-light-color;
     display: flex;
     justify-content: center;
     align-content: center;
-
-    animation-name: index__headerUpper;
-    animation-duration: 2s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
 }
 
 $links-border-radius: 15px;
