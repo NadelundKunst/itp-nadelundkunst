@@ -6,6 +6,7 @@
 
 .index__body {
     background-color: $secondary-light-color;
+    font-family: $primary-font;
     margin-left: auto;
     margin-right: auto;
     padding-top: 400px;
@@ -52,23 +53,34 @@
     animation-fill-mode: forwards;
 }
 
-@keyframes index__links {
-    from {}
-
-    to {
-        background-color: $secondary-light-color;
-    }
-}
+$links-border-radius: 15px;
 
 .index__links {
     align-self: center;
-    height: 50px;
-    width: 40%;
-    
-    animation-name: index__links;
-    animation-duration: 2s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
+    background-color: $secondary-light-color;
+    color: $primary-dark-color;
+
+    border-radius: 0 0 $links-border-radius $links-border-radius;
+
+    a:hover {
+        background-color: $primary-dark-color;
+        color: $secondary-light-color;
+    }
+
+    a {
+        text-decoration: none;
+        padding: 8px;
+        display: inline-block;
+        color: $primary-dark-color;
+    }
+
+    .left {
+        border-radius: 0 0 0 $links-border-radius;
+    }
+
+    .right {
+        border-radius: 0 0 $links-border-radius 0;
+    }
 }
 
 
@@ -129,16 +141,16 @@ section {
 
 footer {
     background-color: $secondary-light-color;
-    
+
     div {
         margin-left: 10%;
         margin-right: 10%;
-        
+
         a {
             color: $secondary-dark-color;
             font-family: sans-serif;
         }
-        
+
         a:hover {
             color: $primary-dark-color;
         }
