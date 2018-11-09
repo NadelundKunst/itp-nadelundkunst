@@ -1,7 +1,7 @@
 <!--
 *
 * Autor: Maciej Dzialoszynski & Sebastian Gruenewald
-* Letzte Änderung: 07.11.18
+* Letzte Änderung: 09.11.18
 -->
 <!DOCTYPE html>
 <html lang="de">
@@ -11,7 +11,7 @@
     <title>Nadel und Kunst</title>
     <link rel="stylesheet" href="themesAndCss/style.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-
+    <script src="homepage/js/index.js"></script>
 </head>
 
 <body class="index__body" onscroll="rolldown()">
@@ -58,21 +58,6 @@
         </div>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        function rolldown() {
-            console.log(pageYOffset)
-            if (pageYOffset > 1) {
-                AOS.init({
-                    easing: 'ease-out-back',
-                    duration: 1500
-                });
-                setTimeout(function() {
-                    document.getElementById("upper").style.height = "50px";
-                }, 1500);
-            }
-        }
-    </script>
-
 </body>
 
 </html>
