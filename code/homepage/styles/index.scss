@@ -29,7 +29,6 @@
     }
 }
 
-
 .index__headerUpper {
     width: 100%;
     background-color: $secondary-light-color;
@@ -42,6 +41,7 @@
 $links-border-radius: 15px;
 
 .index__links {
+
     align-self: center;
     background-color: $secondary-light-color;
     color: $primary-dark-color;
@@ -55,6 +55,21 @@ $links-border-radius: 15px;
     }
 
     a {
+        @include sm {
+            font-size: 30px;
+            padding: 12px;
+        }
+        
+        @include md {
+            font-size: 30px;
+            padding: 10px;
+        }
+        
+        @include lg {
+            font-size: 20px;
+            padding: 8px;
+        }
+
         text-decoration: none;
         padding: 8px;
         display: inline-block;
