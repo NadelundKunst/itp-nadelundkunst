@@ -5,7 +5,7 @@ function rolldown() {
             duration: 1000
         });
         setTimeout(function () {
-            document.getElementById("upper").style.height = "50px";
+            document.getElementById("upper").style.height = "70px";
         }, 1000);
     }
 }
