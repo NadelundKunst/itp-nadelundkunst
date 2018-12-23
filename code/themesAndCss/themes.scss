@@ -14,8 +14,8 @@ $secondary-light-color: #F8EEE7; // shell
 $primary-font: Arial, Helvetica, sans-serif;
 
 $breakpoints: (
-    "phone":        350px,
-    "phone-wide":   480px,
+    "phone": 270px,
+    "small-window": 490px,
     "phablet":      560px,
     "tablet-small": 640px,
     "tablet":       768px,
@@ -35,4 +35,4 @@ $breakpoints: (
     }
 }
 
-$primar-title-size: 20pt;
+$primary-title-size: 40px;
