@@ -14,7 +14,9 @@ $secondary-light-color: #F8EEE7; // shell
 $primary-font: Arial, Helvetica, sans-serif;
 
 $breakpoints: (
-    "phone": 270px,
+    "phone":        290px,
+    "phone-mid":    340px,
+    "phone-big":    380px,
     "small-window": 490px,
     "phablet":      560px,
     "tablet-small": 640px,

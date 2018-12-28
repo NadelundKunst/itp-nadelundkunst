@@ -140,7 +140,15 @@ $links-border-radius: 15px;
     text-align: center;
 
     @include mq('phone') {
-        margin-bottom: 20px;
+        margin-bottom: -80px;
+    }
+    
+    @include mq('phone-mid') {
+        margin-bottom: -40px;
+    }
+    
+    @include mq('phone-big') {
+        margin-bottom: 40px;
     }
 
     @include mq('small-window') {
