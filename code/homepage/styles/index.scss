@@ -5,7 +5,7 @@
 */
 
 .index__body {
-    background-color: $secondary-light-color;
+    background-color: $secondary-dark-color;
     font-family: $primary-font;
     margin-left: auto;
     margin-right: auto;
@@ -20,7 +20,7 @@
     header {
         width: 100%;
         position: fixed;
-        z-index: 9999;
+        z-index: 99;
         top: 0;
 
         display: flex;
@@ -57,8 +57,8 @@ $links-border-radius: 15px;
 
     a {
         @include mq('phone') {
-            padding: 8px;
-            font-size: 15px;
+            padding: 7px;
+            font-size: 14px;
         }
 
         @include mq('small-window') {
@@ -93,7 +93,7 @@ $links-border-radius: 15px;
 
 .index__logo {
     @include mq('phone') {
-        height: 90px;
+        height: 75px;
     }
 
     @include mq('small-window') {
@@ -140,27 +140,64 @@ $links-border-radius: 15px;
     text-align: center;
 
     @include mq('phone') {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
 
     @include mq('small-window') {
-        margin-bottom: 100px;
+        margin-bottom: 60px;
     }
 }
 
-.index__title {
+.index__DarkTitle {
     color: $primary-dark-color;
     font-size: $primary-title-size;
 }
 
+.index__LightTitle {
+    color: $secondary-light-color;
+    font-size: $primary-title-size;
+}
+
+.index__teamSection {
+    background-color: $secondary-light-color;
+}
+
+.index__teamSectionCards {
+    background-color: $secondary-dark-color;
+    color: $secondary-light-color;
+}
+
 .index__text {
-    color: $secondary-dark-color;
+    color: $secondary-light-color;
 }
 
 .index__padding {
     @include mq('phablet', 'max') {
         padding-top: 20px;
     }
+}
+
+// Kundenrezensionen
+.index__tableBackground {
+    background-color: $secondary-light-color;
+}
+.index__table {
+    padding-top: 30px;
+    align-self: center;
+    width: auto;
+
+    td {
+        text-align: center;
+    }
+
+    .table__stars {
+        border-right: 3px solid black;
+        color: $primary-dark-color;
+    }
+}
+
+.index__imageGallerySection {
+    padding-top: 30px;
 }
 
 footer {

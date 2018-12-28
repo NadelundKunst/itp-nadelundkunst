@@ -1,7 +1,7 @@
 <!--
 *
 * Autor: Maciej Dzialoszynski & Sebastian Gruenewald
-* Letzte Änderung: 09.11.18
+* Letzte Änderung: 23.12.18
 -->
 <!DOCTYPE html>
 <html lang="de">
@@ -15,6 +15,15 @@
     <script src="homepage/js/index.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="homepage/materialize/css/materialize.min.css" media="screen,projection" />
+    <script type="text/javascript" src="homepage/materialize/js/materialize.min.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./homepage/js/slick/slick.css" />
+    // Add the new slick-theme.css if you want the default styling
+    <link rel="stylesheet" type="text/css" href="./homepage/js/slick/slick-theme.css" />
 </head>
 
 <body class="index__body" onscroll="rolldown()">
@@ -40,102 +49,111 @@
         </div>
     </div>
 
-    <body>
-        <section>
-            <div class="row container">
-                <div class="col s12">
-                    <h1 class="index__title">Über uns</h1>
-                </div>
-                <div class="col s12 m6 index__text"><b>Nadel & Kunst in einem Satz:</b>
-                    Kreative, schöne und nützliche Einzelstücke aus verschiedenen Materialien (wie Stoff, Papier, Keramik,…).
-
-                    <p><b>Wer ist Nadel & Kunst und wofür steht es?</b></p>
-
-                    Aufstehen, aufdrehen und loslegen: Schon vor dem Frühstück an die Nähmaschine oder ins Atelier, um ein neues Werk herzustellen…. das ist der Traum der beiden Damen, die hinter Nadel & Kunst stehen.
-
-                    „Heute ist mir nach einer Fimo Kette, morgen nähe ich einen neuen Baby Body und übermorgen stricke ich einen Pullover…“ Diese und ähnliche Gedanken spielen sich im Kopf unserer zwei kreativen Köpfe hinter Nadel & Kunst ab.
-                </div>
-                <div class="col s12 m6"><video class="index__padding" width="320" height="240" controls>
-                        <source src="" type="video/mp4"></video>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="row container">
-                <div class="col s12">
-                    <h1 class="index__title">Team</h1>
-                </div>
-                <div class="col s12 m4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="./homepage/images/renee.jpg">
-                            <span class="card-title">Renee Zakall</span>
-                        </div>
-                        <div class="card-content">
-                            <p>Mama von 3 erwachsenen Kindern, Kindergartenpädagogin:
-
-                                Ich liebe es, aus alten oder wertlosen Materialien (wie zB Nespressokapseln, Muscheln, …) neue und schöne Dinge herzustellen. Ich habe unendlich viele kreative Ideen, die ich allesamt gerne in die Tat umsetzten möchte. Sie suchen ein Geschenk für einen lieben Menschen, der eh schon alles hat? Stöbern Sie in unserem Online-Shop, ( www.nadelkunst.at ) ich bin mir sicher, es ist etwas dabei, das Freude bereitet und mit Sicherheit niemand anderer hat!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="./homepage/images/tina.jpg">
-                            <span class="card-title">Tina Dangl</span>
-                        </div>
-                        <div class="card-content">
-                            <p>Juristin (bei www.patka-knowhow.at ), gelernte Kindergartenpädagogin und Frauchen von Beagle Bruno:
-
-
-
-                                Seit ich denken kann, bastle und handarbeite ich gerne. Zur Zeit hat es mir vor allem das Nähen und Sticken angetan. Ich sehe das kreative Schaffen als tollen Ausgleich zu meiner Arbeit als Juristin, weil ich hier Dinge erschaffe, die ich dann in Händen halten kann. Die Einzelstücke, die ich erschaffe, sind vorwiegend aus Stoffen und für Mensch als auch für Hund. Sie hätten gerne ein ganz persönliches Geschenk (wie zB eine Tasche mit Namen bestickt)? Ich bin sicher, da lässt sich etwas machen.
-
-                                Schreiben Sie an office@nadelkunst.at</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="./homepage/images/erich.jpg">
-                            <span class="card-title">Erich Dangl</span>
-                        </div>
-                        <div class="card-content">
-                            <p>Unser IT-Brain hinter Nadel und Kunst: Nichts geht ohne Technik… schon gar nicht bei einem Versandhandel. Während die Mädels die Nähmaschinen und Stricknadeln glühen lassen, kümmere ich mich darum, dass die fertigen Einzelstücke auf der Homepage ihren Auftritt finden. Ich fotografiere leidenschaftlich gerne und mag die Herausforderungen, die ein Internetauftritt mit sich bringt.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </body>
-
-    <!--
+    <!-- UEBER UNS -->
     <section>
-        <div align="center">
-            <h1 class="index__aboutTitle">ÜBER UNS</h1>
-        </div>
-        <div class="index__about">
-            <span>
-                <div class="index__aboutText">
-                    <h3>Header1</h3>
-                    Lorem ipsum dolor sit amet, consetetur sadipscingAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    ergren, no sea takismata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetu
-                    Lorem ipsum dolor sit amet, consetetur sadipscingAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimatas sancstus est Lorem ipsum dolor sit amet.
-                    ergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. sLorem ipsum dolor sit amet, consetetu
-                </div>
-            </span>
-            <span>
-                <div class="index__aboutVideo">
-                    <video width="320" height="240" controls>
-                        <source src="" type="video/mp4">
-                    </video>
-                </div>
-            </span>
+        <div class="row container">
+            <div class="col s12">
+                <h1 class="index__LightTitle">Über uns</h1>
+            </div>
+            <div class="col s12 m7 index__text"><b>Nadel & Kunst in einem Satz:</b>
+                Kreative, schöne und nützliche Einzelstücke aus verschiedenen Materialien (wie Stoff, Papier, Keramik,…).
+
+                <p><b>Wer ist Nadel & Kunst und wofür steht es?</b></p>
+
+                Aufstehen, aufdrehen und loslegen: Schon vor dem Frühstück an die Nähmaschine oder ins Atelier, um ein neues Werk herzustellen…. das ist der Traum der beiden Damen, die hinter Nadel & Kunst stehen.
+
+                „Heute ist mir nach einer Fimo Kette, morgen nähe ich einen neuen Baby Body und übermorgen stricke ich einen Pullover…“ Diese und ähnliche Gedanken spielen sich im Kopf unserer zwei kreativen Köpfe hinter Nadel & Kunst ab.
+            </div>
+            <div class="col s12 m5"><video class="index__padding" width="320" height="240" controls>
+                    <source src="" type="video/mp4"></video>
+            </div>
         </div>
     </section>
--->
+
+    <!-- TEAM -->
+    <section class="index__teamSection">
+        <div class="row container">
+            <div class="col s12">
+                <h1 class="index__DarkTitle">Team</h1>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./homepage/images/renee.jpg">
+                        <span class="card-title">Renee Zakall</span>
+                    </div>
+                    <div class="card-content index__teamSectionCards">
+                        <p>Mama von 3 erwachsenen Kindern, Kindergartenpädagogin:
+
+                            Ich liebe es, aus alten oder wertlosen Materialien (wie zB Nespressokapseln, Muscheln, …) neue und schöne Dinge herzustellen. Ich habe unendlich viele kreative Ideen, die ich allesamt gerne in die Tat umsetzten möchte. Sie suchen ein Geschenk für einen lieben Menschen, der eh schon alles hat? Stöbern Sie in unserem Online-Shop, ( www.nadelkunst.at ) ich bin mir sicher, es ist etwas dabei, das Freude bereitet und mit Sicherheit niemand anderer hat!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./homepage/images/tina.jpg">
+                        <span class="card-title">Tina Dangl</span>
+                    </div>
+                    <div class="card-content index__teamSectionCards">
+                        <p>Juristin (bei www.patka-knowhow.at ), gelernte Kindergartenpädagogin und Frauchen von Beagle Bruno:
+
+
+
+                            Seit ich denken kann, bastle und handarbeite ich gerne. Zur Zeit hat es mir vor allem das Nähen und Sticken angetan. Ich sehe das kreative Schaffen als tollen Ausgleich zu meiner Arbeit als Juristin, weil ich hier Dinge erschaffe, die ich dann in Händen halten kann. Die Einzelstücke, die ich erschaffe, sind vorwiegend aus Stoffen und für Mensch als auch für Hund. Sie hätten gerne ein ganz persönliches Geschenk (wie zB eine Tasche mit Namen bestickt)? Ich bin sicher, da lässt sich etwas machen.
+
+                            Schreiben Sie an office@nadelkunst.at</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./homepage/images/erich.jpg">
+                        <span class="card-title">Erich Dangl</span>
+                    </div>
+                    <div class="card-content index__teamSectionCards">
+                        <p>Unser IT-Brain hinter Nadel und Kunst: Nichts geht ohne Technik… schon gar nicht bei einem Versandhandel. Während die Mädels die Nähmaschinen und Stricknadeln glühen lassen, kümmere ich mich darum, dass die fertigen Einzelstücke auf der Homepage ihren Auftritt finden. Ich fotografiere leidenschaftlich gerne und mag die Herausforderungen, die ein Internetauftritt mit sich bringt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container index__imageGallerySection">
+        <div class="container index__imageGallery">
+            <div><img src="homepage/images/example1.jpg"></div>
+            <div><img src="homepage/images/example2.jpg"></div>
+            <div><img src="homepage/images/example3.jpg"></div>
+            <div><img src="homepage/images/example4.jpg"></div>
+            <div><img src="homepage/images/example2.jpg"></div>
+        </div>
+    </section>
+    
+    <section class="index__tableBackground">
+            <div class="row container">
+                <div class="index__table">
+                    <table class="stripped">
+                        <tbody>
+                            <tr>
+                                <td class="table__stars"><i class="material-icons dp48">star</i></td>
+                                <td><i>"Oasch Seite... I packs nimma"</i></td>
+                            </tr>
+                            <tr>
+                                <td class="table__stars"><i class="material-icons dp48">star</i><i class="material-icons dp48">star</i><i class="material-icons dp48">star</i><i class="material-icons dp48">star</i><i class="material-icons dp48">star</i></td>
+                                <td><i>"Dangl ist der Hammer!"</i></td>
+                            </tr>
+                            <tr>
+                                <td class="table__stars"><i class="material-icons dp48">star</i><i class="material-icons dp48">star</i><i class="material-icons dp48">star</i></td>
+                                <td><i>"Geht so"</i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+
     <footer>
         <div align="center">
             <a href="#">Impressum</a> |
@@ -144,7 +162,10 @@
             <a href="#">Cookie-Richtlinien</a>
         </div>
     </footer>
-    <script type="text/javascript" src="homepage/materialize/js/materialize.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./homepage/js/slick/slick.min.js"></script>
+    <script type="text/javascript" src="homepage/js/mySlick.js"></script>
 </body>
 </html>
