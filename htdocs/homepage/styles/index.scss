@@ -1,0 +1,329 @@
+/*
+* 
+* Autor: Maciej Dzialoszynski & Sebastian Grünewald
+* Letzte Änderung: 09.11.18
+*/
+
+.index__body {
+    background-color: $secondary-dark-color;
+    font-family: $primary-font;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 400px;
+    text-align: center; // whole text in body centered
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+    header {
+        width: 100%;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+}
+
+.index__body__footerPages {
+    background-color: $secondary-dark-color;
+    font-family: $primary-font;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    text-align: center; // whole text in body centered
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+    header {
+        width: 100%;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+}
+
+
+.index__headerUpper {
+    width: 100%;
+    background-color: $secondary-light-color;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0 0 10px;
+}
+
+$links-border-radius: 15px;
+
+.index__links {
+
+    align-self: center;
+    background-color: $secondary-light-color;
+    color: $primary-dark-color;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.35);
+
+    border-radius: 0 0 $links-border-radius $links-border-radius;
+
+    a:hover {
+        background-color: $primary-dark-color;
+        color: $secondary-light-color;
+    }
+
+    a {
+        @include mq('phone') {
+            padding: 7px;
+            font-size: 14px;
+        }
+
+        @include mq('small-window') {
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        @include mq('tablet') {
+            padding: 10px;
+            font-size: 22px;
+        }
+
+        @include mq('desktop') {
+            padding: 10px;
+            font-size: 25px;
+        }
+
+        text-decoration: none;
+        display: inline-block;
+        color: $primary-dark-color;
+    }
+
+    .left {
+        border-radius: 0 0 0 $links-border-radius;
+    }
+
+    .right {
+        border-radius: 0 0 $links-border-radius 0;
+    }
+}
+
+
+.index__logo {
+    @include mq('phone') {
+        height: 75px;
+    }
+
+    @include mq('small-window') {
+        height: 100px;
+    }
+
+    @include mq('phablet') {
+        height: 120px;
+    }
+
+    padding: 10px 0;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.index__jumbotronBackground {
+    position: absolute;
+    top: 0px;
+    background-image: url("../homepage/images/jumbotron.jpg");
+    height: 700px;
+    width: 100%;
+    box-shadow: 0 0 10px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.index__jumbotronTextfield {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+
+    @include mq('phone') {
+        margin-bottom: -80px;
+    }
+
+    @include mq('phone-mid') {
+        margin-bottom: -40px;
+    }
+
+    @include mq('phone-big') {
+        margin-bottom: 40px;
+    }
+
+    @include mq('small-window') {
+        margin-bottom: 60px;
+    }
+}
+
+.back_button {
+    width: auto;
+    height: 30px;
+    text-align: center;
+    color: $primary-dark-color;
+    align-self: center;
+    background-color: $primary-light-color;
+    border-radius: 10px;
+    border: none;
+}
+
+.back_button:hover {
+    background-color: $secondary-light-color;
+}
+
+
+.index__DarkTitle {
+    color: $primary-dark-color;
+    font-size: $primary-title-size;
+}
+
+.index__LightTitle {
+    color: $secondary-light-color;
+    font-size: $primary-title-size;
+}
+
+.index__teamSection {
+    background-color: $secondary-light-color;
+}
+
+.index__teamSectionCards {
+    background-color: $secondary-dark-color;
+    color: $secondary-light-color;
+}
+
+.index__text {
+    color: $secondary-light-color;
+}
+
+.index__padding {
+    @include mq('phablet', 'max') {
+        padding-top: 20px;
+    }
+}
+
+// Kundenrezensionen
+.index__tableBackground {
+    background-color: $secondary-light-color;
+}
+
+.index__table {
+    padding-top: 30px;
+    align-self: center;
+    width: auto;
+
+    td {
+        text-align: center;
+    }
+
+    .table__stars {
+        border-right: 3px solid black;
+        color: $primary-dark-color;
+    }
+}
+
+.index__imageGallerySection {
+    padding-top: 30px;
+}
+
+.index__impressum {
+    padding: 30px;
+    margin-bottom: 80px;
+}
+
+.index__zahlung {
+    padding: 30px;
+    margin-bottom: 80px
+}
+
+.index__datenschutz {
+    padding: 30px;
+    margin-bottom: 80px;
+}
+
+.index__cookies {
+    padding: 40px;
+    margin-bottom: 80px;
+}
+
+.zahlung__table {
+    padding-top: 30px;
+    align-self: center;
+    width: auto;
+    border-collapse: separate;
+
+    td {
+        padding: 8px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+}
+
+.cookies__table {
+    padding-top: 30px;
+    align-self: center;
+    width: auto;
+    border-collapse: separate;
+    text-align: center;
+    
+    td {
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+    }
+}
+
+
+a {
+    text-decoration: underline;
+    color: white;
+}
+
+ul {
+    li {
+        padding-top: 10px;
+    }
+}
+
+footer {
+    background-color: $secondary-light-color;
+
+    div {
+        margin-left: 10%;
+        margin-right: 10%;
+
+        a {
+            color: $secondary-dark-color;
+            font-family: sans-serif;
+        }
+
+        a:hover {
+            color: $primary-dark-color;
+        }
+    }
+}

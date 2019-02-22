@@ -1,0 +1,160 @@
+
+<html lang="de">
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../../materialize/css/materialize.min.css"  media="screen,projection"/>
+    <meta charset="utf-8">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+        ::placeholder {
+            color: black;
+        }
+    </style>
+    <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js">
+    </script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('select').formSelect();
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+        });
+    </script>
+</head>
+<body>
+<nav>
+    <div class="nav-wrapper deep-purple lighten-1">
+        <a href="webshop.php" class="brand-logo center"><img style="margin-top: 2px;" height="55px" src="../../admin_interface/images/logo.png"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li>Zum Warenkorb<a href="warenkorb.php" class="right"><i style="font-size: 40px;margin-right: 10px;" class="material-icons">shopping_cart</i></a></li>
+            <li><a href="../../index.html">Über uns</a></li>
+        </ul>
+    </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+    <li><a href="../../index.html">Über uns</a></li>
+    <li><a href="warenkorb.php">Zum Warenkorb<i style="font-size: 40px;" class="material-icons">shopping_cart</i></a></li>
+</ul>
+
+<h6 class="center" style="margin-left: 20px;margin-right: 20px"><b>Wichtiger Hinweis: Wir versenden ausschließlich in die Länder, die in den Liefer- und Zahlungsbedingungen aufgeführt sind. </b></h6>
+<h6 class="center"> * Pflichtfelder<h6>
+<div class="row">
+    <form class="col s12" method="POST" action="email.php">
+        <div class="row">
+            <div class="col s1 m2 l4 xl4"></div>
+            <div class="center input-field col s4 m4 l4 xl4">
+                <select class="browser-default">
+                    <option value="" selected disabled>Anrede</option>
+                    <option value="herr">Herr.</option>
+                    <option value="frau">Frau.</option>
+                </select>
+            </div>
+            <div class="col s7 m8 l4 xl4"></div>
+        </div>
+        <div class="row">
+            <div class="col s1 m2 l4 xl4"></div>
+            <div class="center input-field col s10 m8 l4 xl4">
+                <input placeholder="Vorname *" name="vorname" type="text">
+            </div>
+            <div class="col s1 m2 l4 xl4"></div>
+        </div>
+        <div class="row">
+            <div class="col s1 m2 l4 xl4"></div>
+            <div class="center input-field col s10 m8 l4 xl4">
+                <input placeholder="Nachname *" name="nachname" type="text">
+            </div>
+            <div class="col s1 m2 l4 xl4"></div>
+        </div>
+        <div class="row">
+            <div class="col s1 m2 l4 xl4"></div>
+            <div class="center input-field col s10 m8 l4 xl4">
+                <input placeholder="Straße, Nr *" name="nachname" type="text">
+            </div>
+            <div class="col s1 m2 l4 xl4"></div>
+        </div>
+        <div class="row">
+            <div class="col s1 m2 l4 xl4"></div>
+            <div class="center input-field col s10 m8 l4 xl4">
+                <input placeholder="Postleitzahl *" name="postleitzahl" type="text">
+            </div>
+            <div class="col s1 m2 l4 xl4"></div>
+        </div>
+        <div class="row">
+            <div class="col s1 m2 l4 xl4"></div>
+            <div class="center input-field col s10 m8 l4 xl4">
+                <input placeholder="Stadt *" name="stadt" type="text">
+            </div>
+            <div class="col s1 m2 l4 xl4"></div>
+        </div>
+        <div class="row">
+            <div class="col s1 m2 l4 xl4"></div>
+            <div class="center input-field col s10 m8 l4 xl4">
+                <input placeholder="Telefon" name="telefon" type="text">
+            </div>
+            <div class="col s1 m2 l4 xl4"></div>
+        </div>
+        <div class="row">
+            <div class="col s1 m2 l4 xl4"></div>
+            <div class="center input-field col s10 m8 l4 xl4">
+                <input placeholder="E-Mail *" class="validate" name="email" type="email">
+            </div>
+            <div class="col s1 m2 l4 xl4"></div>
+        </div>
+        <div class="row">
+            <div class="col s1 m2 l4 xl4"></div>
+            <div class="center input-field col s10 m8 l4 xl4">
+                <input placeholder="Kundennummer" name="kundennummer" type="text">
+            </div>
+            <div class="col s1 m2 l4 xl4"></div>
+        </div>
+        <div class="row">
+            <div class="col s1 m2 l4 xl4"></div>
+            <div class="center input-field col s10 m8 l4 xl4">
+                <select class="browser-default">
+                    <option value="" selected disabled>Land *</option>
+                    <option value="de">Deutschland</option>
+                    <option value="oe">Österreich</option>
+                </select>
+            </div>
+            <div class="col s1 m2 l4 xl4"></div>
+        </div>
+        <div class="row">
+            <div class="col s1 m2 l4 xl4"></div>
+            <div class="center input-field col s10 m8 l4 xl4">
+                <textarea placeholder="Anmerkung" class="materialize-textarea"></textarea>
+            </div>
+            <div class="col s1 m2 l4 xl4"></div>
+        </div>
+        <div class="row">
+            <div class="col s1 m2 l4 xl4"></div>
+            <div class="center input-field col s10 m8 l4 xl4">
+                <label>
+                    <input type="checkbox" class="filled-in" />
+                    <span>DSGVO</span>
+                </label>
+            </div>
+            <div class="col s1 m2 l4 xl4"></div>
+        </div>
+        <div class="row">
+            <div class="col s1 m2 l4 xl4"></div>
+            <div class="center input-field col s10 m8 l4 xl4">
+                <label>
+                    <input type="checkbox" class="filled-in"/>
+                    <span>Newsletter</span>
+                </label>
+            </div>
+            <div class="col s1 m2 l4 xl4"></div>
+        </div>
+    </form>
+</div>
+</body >
+</html>
